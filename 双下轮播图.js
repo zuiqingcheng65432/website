@@ -14,7 +14,7 @@ function banner_lr(imgs,dots,banner,leftbtn,rightbtn,width){
 		 width=parseInt(getComputedStyle(imgs[0],null).width);
 		 let now=0;
 		 let next=0;
-		 let t=setInterval(move,2000);
+//		 let t=setInterval(move,2000);
 		 function move()
 		 {
 			next++;
@@ -103,14 +103,14 @@ function banner_lr(imgs,dots,banner,leftbtn,rightbtn,width){
 
 		}
 		
-		banner.onmouseover=function()
-		{
-				clearInterval(t);
-		}
-		banner.onmouseout=function()
-		{
-				t=setInterval(move,2000);
-		}
+//		banner.onmouseover=function()
+//		{
+//				clearInterval(t);
+//		}
+//		banner.onmouseout=function()
+//		{
+//				t=setInterval(move,2000);
+//		}
 		
 		leftbtn.onclick=function()
 		{
@@ -118,10 +118,10 @@ function banner_lr(imgs,dots,banner,leftbtn,rightbtn,width){
 			{
 				return ;
 			}
-//			if(next==0)
-//			{
-//				return ;
-//			}
+			if(next==0)
+			{
+				return ;
+			}
 			flag=false;
 			
 			moveL();
@@ -132,10 +132,10 @@ function banner_lr(imgs,dots,banner,leftbtn,rightbtn,width){
 			{
 				return ;
 			}
-//			if(next==imgs.length-1)
-//			{
-//				return ;
-//			}
+			if(next==imgs.length-1)
+			{
+				return ;
+			}
 			
 			flag=false;
 			move();
