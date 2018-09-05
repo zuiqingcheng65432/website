@@ -112,34 +112,34 @@ function banner_lr(imgs,dots,banner,leftbtn,rightbtn,width){
 				t=setInterval(move,2000);
 		}
 		
-//		leftbtn.onclick=function()
-//		{
-//			if(!flag)
-//			{
-//				return ;
-//			}
+		leftbtn.onclick=function()
+		{
+			if(!flag)
+			{
+				return ;
+			}
 //			if(next==0)
 //			{
 //				return ;
 //			}
-//			flag=false;
-//			
-//			moveL();
-//		}
-//		rightbtn.onclick=function()
-//		{
-//			if(!flag)
-//			{
-//				return ;
-//			}
+			flag=false;
+			
+			moveL();
+		}
+		rightbtn.onclick=function()
+		{
+			if(!flag)
+			{
+				return ;
+			}
 //			if(next==imgs.length-1)
 //			{
 //				return ;
 //			}
-//			
-//			flag=false;
-//			move();
-//		}
+			
+			flag=false;
+			move();
+		}
 }
 
 
